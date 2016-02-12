@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ishaan.production.fileupload.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#817474">
+
+
+
+    <ImageButton
+
+        android:src="@drawable/ic_upload"
+        android:id="@+id/upload"
+
+        android:contentDescription="Upload"
+
+
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo"
+
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/upload" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Innovative Minds Academy"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc"
+        android:hint="Desciption"
+        android:layout_alignTop="@+id/upload"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="default value of Desc.: hello"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/desc"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
